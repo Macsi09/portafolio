@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #c4b7e7; /* Cambiado a un tono de morado suave */
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #6c5b7b; /* Cambiado a un tono de morado oscuro */
+            color: #fff;
+            padding: 20px;
+        }
+
+        button {
+            background-color: #6c5b7b; /* Cambiado a un tono de morado oscuro */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px; /* Añadido un radio de borde */
+        }
+
+        button:hover {
+            background-color: #5b4a6a; /* Color de fondo más oscuro al pasar el mouse */
+        }
+
+        section {
+            text-align: center;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border: 2px solid #6c5b7b; /* Cambiado a un borde del mismo morado oscuro */
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi Portafolio</h1>
+    </header>
+    <main>
+        <section>
+            <button onclick="scrollToSection('section1')">Bienvenida</button>
+            <button onclick="scrollToSection('section2')">Sobre mí</button>
+            <button onclick="scrollToSection('section3')">Currículum</button>
+            <button onclick="scrollToSection('section4')">Contacto & Redes Sociales</button>
+        </section>
+        <section id="section1">
+            <h2>Bienvenida</h2>
+            <p>Bienvenido a mi portafolio web, donde podrás conocer un poco más sobre mí en un entorno informal.</p>
+        </section>
+        <section id="section2">
+            <h2>Sobre mí</h2>
+            <p>Actualmente, soy estudiante del instituto Nicolau Copérnico, cursando el segundo año de ASIR (Asistencia de Sistemas Informáticos en Red). Estoy dispuesto a crecer tanto personal como profesionalmente y no descarto la posibilidad de incursionar en el campo laboral de las redes.</p>
+        </section>
+        <section id="section3">
+            <h2>Currículum</h2>
+            <p>Aquí puedes encontrar mi currículum en formato PDF para obtener más detalles sobre mi formación y experiencia.</p>
+            <a href="CV - Maximiliano Nahuel Becette Ortiz.pdf" target="_blank">Descargar Currículum</a>
+        </section>
+        <section id="section4">
+            <h2>Contacto & Redes Sociales</h2>
+            <p>Puedes contactarme a través de mi correo electrónico o mi número de teléfono. También puedes encontrarme en LinkedIn para mantenernos en contacto.</p>
+            <p>Gmail: maximilianobecette@gmail.com</p>
+            <p>Teléfono: 607825075</p>
+            <a href="https://www.linkedin.com/in/maximiliano-nahuel-becette-ortiz-434b47230" target="_blank">LinkedIn</a>
+        </section>
+    </main>
+
+    <script>
+        function scrollToSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section) {
+                section.scrollIntoView({ behavior: "smooth" });
+            }
+        }
+    </script>
+</body>
+</html>
